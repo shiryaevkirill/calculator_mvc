@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model task1b.Models.Calc
+
+
+    <html>
+    <head>
+        <title>Кек</title>
+
+        <link type="text/css" href="~/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        @using (Html.BeginForm("Index", "Calc", FormMethod.Post))
+        {
+
+            <div class="numb">
+
+                <label>@Model.number</label>
+            </div>
+
+            <div class="btn-field">
+                <button type="submit" class="btn" id="btn-1" value="btn-1" name="calcbtn">1</button>
+                <button type="submit" class="btn" id="btn-2" value="btn-2" name="calcbtn">2</button>
+                <button type="submit" class="btn" id="btn-3" value="btn-3" name="calcbtn">3</button>
+                <button type="submit" class="btn" id="btn-plus" value="btn-plus" name="calcbtn">+</button>
+                <button type="submit" class="btn" id="btn-4" value="btn-4" name="calcbtn">4</button>
+                <button type="submit" class="btn" id="btn-5" value="btn-5" name="calcbtn">5</button>
+                <button type="submit" class="btn" id="btn-6" value="btn-6" name="calcbtn">6</button>
+                <button type="submit" class="btn" id="btn-minus" value="btn-minus" name="calcbtn">-</button>
+                <button type="submit" class="btn" id="btn-7" value="btn-7" name="calcbtn">7</button>
+                <button type="submit" class="btn" id="btn-8" value="btn-8" name="calcbtn">8</button>
+                <button type="submit" class="btn" id="btn-9" value="btn-9" name="calcbtn">9</button>
+                <button type="submit" class="btn" id="btn-mult" value="btn-mult" name="calcbtn">*</button>
+                <button type="submit" class="btn" id="btn-point" value="btn-point" name="calcbtn">,</button>
+                <button type="submit" class="btn" id="btn-0" value="btn-0" name="calcbtn">0</button>
+                <button type="submit" class="btn" id="btn-C" value="btn-C" name="calcbtn">C</button>
+                <button type="submit" class="btn" id="btn-div" value="btn-div" name="calcbtn">/</button>
+                <button type="submit" class="btn" id="btn-eq" value="btn-eq" name="calcbtn">=</button>
+            </div>
+
+
+
+        }
+
+
+
+    </body>
+    </html>
